@@ -39,8 +39,4 @@
     height: 100vh;
     overflow: hidden;
   }
-
-  .navigation {
-    display: none;
-  }
 }
