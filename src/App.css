@@ -29,9 +29,18 @@
   background: rgb(58, 56, 56);
   width: 100vw;
 }
+
+.navigation a:hover {
+  color: blue;
+  font-size: large;
+}
 @media (max-width: 768px) {
   .contact {
     height: 100vh;
     overflow: hidden;
+  }
+
+  .navigation {
+    display: none;
   }
 }

@@ -108,7 +108,7 @@ function MyProfile() {
       <MyNavbar />
       <Container>
         <Row className="my-3">
-          <Col className="profile-pic">
+          <Col className="profile-pic my-3">
             <img
               src="https://avatars.githubusercontent.com/u/121387892?v=4"
               alt="profile_pic"

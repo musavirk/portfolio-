@@ -1,16 +1,12 @@
+import MyNavbar from "./MyNavbar";
 function Service() {
   return (
-    <div>
-      <div>
-        <h1>P1</h1>
+    <>
+      <MyNavbar />
+      <div className="d-flex  justify-content-center align-center">
+        <h1>Coming Soon . . .</h1>
       </div>
-      <div>
-        <h1>P2</h1>
-      </div>
-      <div>
-        <h1>P3</h1>
-      </div>
-    </div>
+    </>
   );
 }
 
