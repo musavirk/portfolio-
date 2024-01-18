@@ -17,8 +17,11 @@ const MyNavbar = () => {
               <List />
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item href="/">Home</Dropdown.Item>
-              <Dropdown.Item href="/service">Services</Dropdown.Item>
+              <Dropdown.Item href="/">About</Dropdown.Item>
+              <Dropdown.Item href="/skills">Skills</Dropdown.Item>
+              <Dropdown.Item href="/education">Education</Dropdown.Item>
+              <Dropdown.Item href="/education">Education</Dropdown.Item>
+              <Dropdown.Item href="/projects">Projects</Dropdown.Item>
               <Dropdown.Item href="/contact">Contact</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
@@ -26,7 +29,16 @@ const MyNavbar = () => {
 
         {/* Regular navigation links for larger devices */}
         <div className="mx-3 d-none d-md-block">
-          <a href="/">Home</a>
+          <a href="/">About</a>
+        </div>
+        <div className="mx-3 d-none d-md-block">
+          <a href="/skills">Skills</a>
+        </div>
+        <div className="mx-3 d-none d-md-block">
+          <a href="/education">Education</a>
+        </div>
+        <div className="mx-3 d-none d-md-block">
+          <a href="/projects">Projects</a>
         </div>
         <div className="mx-3 d-none d-md-block">
           <a href="/service">Services</a>

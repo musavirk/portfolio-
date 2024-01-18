@@ -1,4 +1,5 @@
 import MyNavbar from "./MyNavbar";
+import About from "./About";
 function Contact() {
   return (
     <>
@@ -103,6 +104,7 @@ function Contact() {
           </div>
         </div>
       </div>
+      <About />
     </>
   );
 }
