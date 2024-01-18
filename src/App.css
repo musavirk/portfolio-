@@ -38,6 +38,14 @@
   color: blue;
   font-size: large;
 }
+.main {
+  width: 100vw;
+  height: calc(100vh - 66px);
+  overflow: scroll;
+}
+.main ::-webkit-scrollbar {
+  display: none;
+}
 
 .navigation a:active {
   color: rgb(16, 13, 68);

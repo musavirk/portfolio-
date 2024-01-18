@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import MyNavbar from "./MyNavbar";
+import Main from "../layout/Main";
 function Skills() {
   const skills = [
     {
@@ -129,27 +129,38 @@ function Skills() {
   ];
   return (
     <>
-      <MyNavbar />
-      <Container>
-        <Row className="my-3">
-          {skills.map((skill, index) => (
-            <Col key={index} className="m-2 skills ">
-              <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                <img src={skill.img} alt={skill.name} height="70" width="70" />
-              </a>
-            </Col>
-          ))}
-        </Row>
-        <Row className="my-3">
-          {skills_two.map((skill, index) => (
-            <Col key={index} className="m-2 skills">
-              <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                <img src={skill.img} alt={skill.name} height="70" width="70" />
-              </a>
-            </Col>
-          ))}
-        </Row>
-      </Container>
+      <Main>
+        <Container>
+          <Row className="my-3">
+            {skills.map((skill, index) => (
+              <Col key={index} className="m-2 skills ">
+                <a href={skill.link} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={skill.img}
+                    alt={skill.name}
+                    height="70"
+                    width="70"
+                  />
+                </a>
+              </Col>
+            ))}
+          </Row>
+          <Row className="my-3">
+            {skills_two.map((skill, index) => (
+              <Col key={index} className="m-2 skills">
+                <a href={skill.link} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={skill.img}
+                    alt={skill.name}
+                    height="70"
+                    width="70"
+                  />
+                </a>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </Main>
     </>
   );
 }

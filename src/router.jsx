@@ -1,9 +1,9 @@
-import About from "./components/About.jsx";
-import Contact from "./components/Contact.jsx";
-import Service from "./components/Service.jsx";
-import Skills from "./components/Skills.jsx";
-import Education from "./components/Education.jsx";
-import Projects from "./components/Projects.jsx";
+import About from "./view/About.jsx";
+import Contact from "./view/Contact.jsx";
+import Service from "./view/Service.jsx";
+import Skills from "./view/Skills.jsx";
+import Education from "./view/Education.jsx";
+import Projects from "./view/Projects.jsx";
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
