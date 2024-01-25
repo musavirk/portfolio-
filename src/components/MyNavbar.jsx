@@ -1,7 +1,10 @@
-import { Dropdown } from "react-bootstrap";
-import { List } from "react-bootstrap-icons";
+import { Dropdown, Button } from "react-bootstrap";
+import { List, Sun, Moon } from "react-bootstrap-icons";
 
 const MyNavbar = () => {
+  const toggleMode = () => {
+    document.body.classList.toggle("dark-mode");
+  };
   return (
     <nav>
       <div className="m-3">
@@ -46,6 +49,11 @@ const MyNavbar = () => {
         <div className="mx-3 d-none d-md-block">
           <a href="/contact">Contact</a>
         </div>
+      </div>
+      <div>
+        <Button onClick={toggleMode}>
+          <Sun />
+        </Button>
       </div>
     </nav>
   );
