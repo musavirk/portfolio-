@@ -1,9 +1,22 @@
 import { Dropdown, Button } from "react-bootstrap";
-import { List, Sun, Moon } from "react-bootstrap-icons";
+import { List, Sun, MoonFill } from "react-bootstrap-icons";
+import { useState, useEffect } from "react";
 
 const MyNavbar = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    const bodyClass = document.body.className;
+    setIsDarkMode(bodyClass.includes("dark-mode"));
+  }, []);
+
   const toggleMode = () => {
-    document.body.classList.toggle("dark-mode");
+    // Toggle the state and update the body class
+    setIsDarkMode((prevMode) => {
+      const newMode = !prevMode;
+      document.body.classList.toggle("dark-mode", newMode);
+      return newMode;
+    });
   };
   return (
     <nav>
@@ -52,7 +65,7 @@ const MyNavbar = () => {
       </div>
       <div>
         <Button onClick={toggleMode}>
-          <Sun />
+          {isDarkMode ? <Sun /> : <MoonFill />}
         </Button>
       </div>
     </nav>
